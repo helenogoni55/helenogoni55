@@ -1,0 +1,41 @@
+from tkinter import *
+
+count = 0
+def click():
+    global count
+    count += 1
+    print(count)
+    print("You can do it!!")
+
+
+tarminal = Tk()
+
+photo = PhotoImage(file='youtube-logo.png')
+#file = ("C:\\Users\\Lenovo\\Music\\Dj-Snake-Justin-Bieber-Let-Me-Love-You_2.mp3")
+
+button = Button(tarminal,
+                text='Click here',
+                command=click,
+                font=('ariel',30,'bold'),
+                fg='#00FF00',
+                bg='red',
+                activeforeground='#00FF00',
+                activebackground='red',
+                state='active',
+                image=photo,
+                compound='bottom')
+
+button.pack()
+
+tarmina.geometry("600x400")
+
+
+tarminal.mainloop()
+
+
+
+
+
+
+
+
